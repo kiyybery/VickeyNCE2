@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_words_charts_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingBottom="10px"
+        android:paddingTop="10px" >
+
+        <LinearLayout
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10px" >
+
+            <TextView
+                android:id="@+id/tv_adapter_words_charts_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="34px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="30px"
+                android:background="@drawable/adapter_words_charts_numbg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="#ffffff"
+                android:textSize="20px"
+                android:textStyle="bold"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="32px"
+                android:layout_height="34px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:background="@drawable/adapter_words_charts_numbg_myself"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="#ffffff"
+                android:textSize="20px"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_adapter_words_charts_avatar"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@drawable/adapter_words_charts_avatar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_adapter_words_charts_name"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="sunny"
+            android:textColor="#dd2826"
+            android:textSize="24px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_adapter_words_charts_accuracy"
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="75px"
+            android:text="100%"
+            android:textColor="#a4aeb9"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/tv_adapter_words_charts_duration"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:paddingRight="85px"
+            android:text="01:30"
+            android:textColor="#a4aeb9"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_words_charts_blank"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="15px"
+            android:background="@drawable/adapter_words_charts_ellipsis" />
+    </LinearLayout>
+
+</LinearLayout>

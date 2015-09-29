@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_downloadfragment_not_success"
+        android:layout_width="match_parent"
+        android:layout_height="165px"
+        android:layout_margin="10px"
+        android:background="@drawable/item_bg"
+        android:orientation="horizontal"
+        android:padding="10px"
+        android:weightSum="10" >
+
+        <ImageView
+            android:id="@+id/iv_adapter_downloadfragment_cover"
+            android:layout_width="0px"
+            android:layout_height="145px"
+            android:layout_weight="4.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaultimg" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_weight="5.5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_adapter_downloadfragment_lesson"
+                style="@style/A1_Font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20px"
+                android:gravity="center"
+                android:text="第一单元lesson1"
+                android:textSize="28px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginBottom="25px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/download_progressbar" />
+
+                <ImageView
+                    android:id="@+id/iv_adapter_downloadfragment_progress_point"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/download_progressbar_point" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_adapter_downloadfragment_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#999999"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_adapter_downloadfragment_down"
+            android:layout_width="110px"
+            android:layout_height="145px"
+            android:layout_marginLeft="10px"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_adapter_downloadfragment_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:drawableTop="@drawable/btn_download_complete"
+                android:text="下载中"
+                android:textColor="#999999"
+                android:textSize="24px" />
+
+            <Button
+                android:id="@+id/btn_adapter_downloadfragment_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:drawableTop="@drawable/btn_download_pause"
+                android:text="已暂停"
+                android:textColor="#999999"
+                android:textSize="24px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_adapter_downloadfragment_checkbox1"
+            android:layout_width="110px"
+            android:layout_height="145px"
+            android:layout_marginLeft="10px"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/cbx_adapter_downloadfragment_choose_after1"
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_download_check_on"
+                android:button="@null"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cbx_adapter_downloadfragment_choose_before1"
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_download_check_off"
+                android:button="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_downloadfragment_success"
+        android:layout_width="match_parent"
+        android:layout_height="165px"
+        android:layout_margin="10px"
+        android:background="@drawable/item_bg"
+        android:orientation="horizontal"
+        android:padding="10px"
+        android:visibility="visible"
+        android:weightSum="10" >
+
+        <ImageView
+            android:id="@+id/iv_adapter_downloadfragment_cover_success"
+            android:layout_width="0px"
+            android:layout_height="145px"
+            android:layout_weight="4.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaultimg" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_weight="5.5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_adapter_downloadfragment_lesson_success"
+                style="@style/A1_Font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="55px"
+                android:gravity="center"
+                android:text="第一单元lesson1"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_adapter_downloadfragment_size_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="20M"
+                android:textColor="#999999"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_adapter_downloadfragment_checkbox"
+            android:layout_width="110px"
+            android:layout_height="145px"
+            android:layout_marginLeft="10px" >
+
+            <CheckBox
+                android:id="@+id/cbx_adapter_downloadfragment_choose_after"
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_download_check_on"
+                android:button="@null"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cbx_adapter_downloadfragment_choose_before"
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_download_check_off"
+                android:button="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

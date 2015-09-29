@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_white_shadow_color">#ff5a9487</color>
+    <color name="white">#ffffff</color>
+    <color name="settings_tv_enabled">#333333</color>
+    <color name="settings_tv_disabled">#333333</color>
+    <color name="title_color">#14ccb2</color>
+    <color name="title_color_whrit">#ffffff</color>
+    <color name="tools_box_bg">#ff333332</color>
+
+</resources>

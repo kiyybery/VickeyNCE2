@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bgimg" >
+
+    <ImageView
+        android:layout_width="204px"
+        android:layout_height="189px"
+        android:layout_marginTop="120px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_logo"/>
+    <ImageView 
+        android:layout_width="498px"
+        android:layout_height="34px"
+        android:layout_marginTop="360px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_slogan"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60px"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+	
+	    <Button
+	        android:id="@+id/btn_login_sina"
+	        android:layout_width="match_parent"
+	        android:layout_height="90px"
+	        android:layout_marginBottom="40px"
+	        android:paddingLeft="180px"
+	        android:paddingRight="180px"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/btn_blue"
+	        android:drawableLeft="@drawable/login_weibo"
+	        android:text="微博登录"
+	        android:textColor="#ffffff"
+	        android:textSize="36px"
+	        android:shadowColor="#30000000"  
+		    android:shadowDx="2"  
+		    android:shadowDy="2"       
+		    android:shadowRadius="2" />
+	    <Button
+	        android:id="@+id/btn_login_qq"
+	        android:layout_width="match_parent"
+	        android:layout_height="90px"
+	        android:layout_marginBottom="100px"
+	        android:paddingLeft="180px"
+	        android:paddingRight="180px"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/btn_cyan"
+	        android:drawableLeft="@drawable/login_qq"
+	        android:text="QQ登录"
+	        android:textColor="#ffffff"
+	        android:textSize="36px"
+	        android:shadowColor="#30000000"  
+		    android:shadowDx="2"  
+		    android:shadowDy="2"       
+		    android:shadowRadius="2" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_words_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:layout_marginTop="80px"
+        android:gravity="center_horizontal"
+        android:textColor="#333333"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排位："
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_words_chart_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:text="26"
+            android:textColor="#dd2826"
+            android:textSize="60px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成绩："
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_words_charts_result_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:text="100%"
+            android:textColor="#333333"
+            android:textSize="28px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用时："
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_words_charts_result_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:text="02:30"
+            android:textColor="#333333"
+            android:textSize="28px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="闯关时间："
+            android:textColor="#333333"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_words_charts_result_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-04-02"
+            android:textColor="#333333"
+            android:textSize="28px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_words_charts_again"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/btn_cyan"
+        android:text="再次挑战"
+        android:textColor="#ffffff"
+        android:textSize="36px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42px"
+        android:layout_marginTop="30px"
+        android:background="#a4aeb9"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="155px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10px"
+            android:text="排位"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="285px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="25px"
+            android:text="学员"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="140px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="成绩"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="用时"
+            android:textColor="#ffffff"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#93999e" />
+
+</LinearLayout>

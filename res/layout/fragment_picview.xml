@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/course_list_bg2"
+    android:orientation="vertical" >
+
+    <cn.ttsk.library.RollerView
+        android:id="@+id/rv_fragment_picview_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:background="#00000000"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="15px"
+        android:src="@drawable/main_title_slidingmenu_left_normal"
+        android:text="切换" />
+
+    <TextView
+        android:id="@+id/tv_fragement_picview_title"
+        style="@style/A1_Font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44.5dp"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/section_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100px"
+        android:background="@drawable/course_list_bg2"
+        android:orientation="vertical" >
+
+        <!-- 进度条 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/white" >
+
+            <ProgressBar
+                android:id="@+id/pb_text_oral_text_testing_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="560px"
+                android:layout_height="20px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="20px"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbga_test" />
+
+            <TextView
+                android:id="@+id/tv_text_oral_text_probar_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toRightOf="@id/pb_text_oral_text_testing_bar"
+                android:text="0%"
+                android:textColor="#333333"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <!-- 说下一句 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100px" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_text_oral_text_play"
+                    android:layout_width="106px"
+                    android:layout_height="106px"
+                    android:layout_marginRight="18px"
+                    android:layout_marginTop="125px"
+                    android:src="@drawable/oral_play_btn" />
+
+                <ImageView
+                    android:id="@+id/iv_text_oral_text_stop"
+                    android:layout_width="106px"
+                    android:layout_height="106px"
+                    android:layout_marginRight="18px"
+                    android:layout_marginTop="125px"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="106px"
+                        android:layout_marginRight="18px"
+                        android:layout_marginTop="125px"
+                        android:background="@drawable/oral_item_bg" />
+
+                    <cn.ttsk.view.LyricViewOrial
+                        android:id="@+id/btn_text_oral_text_LyricShow"
+                        android:layout_width="match_parent"
+                        android:layout_height="400px"
+                        android:lines="2"
+                        android:ellipsize="end"
+                        android:background="#00000000"
+                        android:gravity="center_vertical" >
+                    </cn.ttsk.view.LyricViewOrial>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="80px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="420px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_text_oral_text_voice_left"
+                        android:layout_width="81px"
+                        android:layout_height="105px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/record2left"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_text_oral_text_voice_record"
+                        android:layout_width="220px"
+                        android:layout_height="220px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/text_oral_test_speaker" />
+
+                    <ImageView
+                        android:id="@+id/iv_text_oral_text_voice_right"
+                        android:layout_width="81px"
+                        android:layout_height="105px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/record2right"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 说上一句 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="@drawable/text_oral_test_bg2"
+                    android:gravity="center"
+                    android:text="Excuse me"
+                    android:textColor="#ffffff"
+                    android:textSize="28px" />
+
+                <RelativeLayout
+                    android:layout_width="420px"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:layout_width="81px"
+                        android:layout_height="105px"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/text_oral_test_voice_left" />
+
+                    <Button
+                        android:layout_width="220px"
+                        android:layout_height="220px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/text_oral_test_speaker" />
+
+                    <ImageView
+                        android:layout_width="81px"
+                        android:layout_height="105px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/text_oral_test_voice_right" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:gravity="center_horizontal"
+                    android:text="按照课文说出上一句"
+                    android:textColor="#333333"
+                    android:textSize="24px" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

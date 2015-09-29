@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81px"
+        android:background="@drawable/btn_download_buffer_noselect"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_fragment_download_not_sccess_buffer"
+            android:layout_width="0px"
+            android:layout_height="81px"
+            android:layout_weight="1"
+            android:background="@drawable/btn_download_buffer_select"
+            android:text="缓存中"
+            android:textColor="#14ccb2"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dddddd" />
+
+        <Button
+            android:id="@+id/btn_fragment_download_sccess_buffer"
+            android:layout_width="0px"
+            android:layout_height="81px"
+            android:layout_weight="1"
+            android:background="@drawable/btn_download_buffer_noselect"
+            android:text="已缓存"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_fragment_download_sccess_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80px"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        style="@style/bgimg">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_download_delete"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#dddddd" />
+
+        <Button
+            android:id="@+id/btn_fragment_download_delete"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_margin="20px"
+            android:background="@drawable/btn_red"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="36px" />
+    </LinearLayout>
+
+</RelativeLayout>

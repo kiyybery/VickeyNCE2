@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="blue">#0066dd</color>
+    <color name="black">#000000</color>
+    <!-- <color name="red">#bf242a</color> -->
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="trans">#50000000</color>
+    <color name="red">#fe0202</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="words_charts_odd">#f6f8fa</color>
+    <color name="words_charts_even">#ffffff</color>
+    <color name="course_list_0">#14ccb2</color>
+    <color name="course_list_1">#51b1e0</color>
+    <color name="course_list_2">#feb737</color>
+    <color name="course_list_3">#ff6661</color>
+    <color name="video_list_color">#14CCB2</color>
+    <color name="main_left_text_gray">#999999</color>
+    <color name="main_left_text_normal">#ffffff</color>
+    <color name="picview_border">#41ff0000</color>
+    <color name="title_home_bar">#00000000</color>
+
+</resources>

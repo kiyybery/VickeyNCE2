@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_top_corner_no_bottom_line"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/section_title" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/bgimg" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                style="@style/bgimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50px"
+                android:orientation="vertical" >
+
+                <!-- 进度条 -->
+
+                <LinearLayout
+                    android:id="@+id/rl_activity_words_blank_testing_progress"
+                    style="@style/bgimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:visibility="visible"
+                    android:weightSum="7" >
+
+                    <ProgressBar
+                        android:id="@+id/pb_activity_words_blank_testing"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="540px"
+                        android:layout_height="20px"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="6"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progressbga_test" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_words_blank_testing_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/pb_activity_words_blank_testing"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="00:00"
+                        android:textColor="#333333"
+                        android:textSize="36px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!-- 根据翻译填空 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_words_blank_nameplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="30px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_activity_words_blank_nameplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10px"
+                        android:text="n.钱包"
+                        android:textColor="#333333"
+                        android:textSize="48px"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_activity_words_blank_nameplay"
+                        android:layout_width="48px"
+                        android:layout_height="48px"
+                        android:src="@drawable/adapter_words_read" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_activity_words_blank_namephonetic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:text="[pɜːs]"
+                    android:textColor="#333333"
+                    android:textSize="40px"
+                    android:visibility="gone" />
+                <!-- 根据例句填空 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_words_blank_fillintheblanks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_activity_words_blank_fillintheblanks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10px"
+                        android:text="There is an electric ________ in the kitchen."
+                        android:textColor="#333333"
+                        android:textSize="40px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_words_blank_fillintheblankstranslate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="厨房里有个电灶。"
+                        android:textColor="#333333"
+                        android:textSize="40px" />
+                </LinearLayout>
+                <!-- 根据图片填空 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_words_blank_lookPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="380px"
+                    android:layout_margin="30px"
+                    android:background="@drawable/adapter_words_choice_imgbg"
+                    android:paddingBottom="41px"
+                    android:paddingLeft="14px"
+                    android:paddingRight="14px"
+                    android:paddingTop="14px"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/iv_activity_words_blank_lookPicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <!-- 选项为全部是文字的布局 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_words_blank_all_layout_chioce_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_activity_words_blank_chioce_item_before_checked1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_marginBottom="20px"
+                        android:background="@drawable/item_bg_border_cyan"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px" >
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_item_before_checked1"
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30px"
+                            android:src="@drawable/item_no" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_words_blank_chioce_item_checked1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/iv_activity_words_blank_chioce_item_before_checked1"
+                            android:text="n.相机"
+                            android:textColor="#333333"
+                            android:textSize="36px" />
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_item_checked1"
+                            android:layout_width="67px"
+                            android:layout_height="67px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/adapter_words_correct"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_activity_words_blank_chioce_item_before_checked2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_marginBottom="20px"
+                        android:background="@drawable/item_bg_border_cyan"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px" >
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_item_before_checked2"
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30px"
+                            android:src="@drawable/item_no" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_words_blank_chioce_item_checked2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/iv_activity_words_blank_chioce_item_before_checked2"
+                            android:text="n.相机"
+                            android:textColor="#333333"
+                            android:textSize="36px" />
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_item_checked2"
+                            android:layout_width="67px"
+                            android:layout_height="67px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/adapter_words_correct"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_activity_words_blank_chioce_item_before_checked3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_marginBottom="20px"
+                        android:background="@drawable/item_bg_border_cyan"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px" >
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_before_item_checked3"
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30px"
+                            android:src="@drawable/item_no" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_words_blank_chioce_item_checked3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/iv_activity_words_blank_chioce_before_item_checked3"
+                            android:text="n.相机"
+                            android:textColor="#333333"
+                            android:textSize="36px" />
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_item_checked3"
+                            android:layout_width="67px"
+                            android:layout_height="67px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/adapter_words_correct"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_activity_words_blank_chioce_item_before_checked4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_marginBottom="20px"
+                        android:background="@drawable/item_bg_border_cyan"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px" >
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_before_item_checked4"
+                            android:layout_width="40px"
+                            android:layout_height="40px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30px"
+                            android:src="@drawable/item_no" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_words_blank_chioce_item_checked4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/iv_activity_words_blank_chioce_before_item_checked4"
+                            android:text="n.相机"
+                            android:textColor="#333333"
+                            android:textSize="36px" />
+
+                        <ImageView
+                            android:id="@+id/iv_activity_words_blank_chioce_item_checked4"
+                            android:layout_width="67px"
+                            android:layout_height="67px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/adapter_words_correct"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- 选项为全部是图片的布局 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_activity_words_blank_imageview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_activity_words_blank_imageview_checked1"
+                            android:layout_width="0px"
+                            android:layout_height="200px"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_checked1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/defaultimg" />
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_error_checked1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/adapter_words_correct"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_activity_words_blank_imageview_checked2"
+                            android:layout_width="0px"
+                            android:layout_height="200px"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_checked2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/defaultimg" />
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_error_checked2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/adapter_words_correct"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2" >
+
+                        <RelativeLayout
+                            android:id="@+id/rl_activity_words_blank_imageview_checked3"
+                            android:layout_width="0px"
+                            android:layout_height="200px"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_checked3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/defaultimg" />
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_error_checked3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/adapter_words_correct"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_activity_words_blank_imageview_checked4"
+                            android:layout_width="0px"
+                            android:layout_height="200px"
+                            android:layout_weight="1" >
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_checked4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/defaultimg" />
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_imageview_error_checked4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/adapter_words_correct"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 选项是填空的布局 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_activity_words_blank_editText_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/et_activity_words_blank_editText_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30px"
+                        android:hint="" />
+
+                    <ImageView
+                        android:id="@+id/iv_activity_words_blank_editText"
+                        android:layout_width="67px"
+                        android:layout_height="50px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40px"
+                        android:src="@drawable/adapter_words_correct"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <!-- 解析内容 -->
+
+                <RelativeLayout
+                    android:id="@+id/rl_activity_words_blank_analysis_all_layout__id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="10px"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6px"
+                        android:background="@drawable/item_bg"
+                        android:minHeight="100px"
+                        android:orientation="vertical"
+                        android:paddingBottom="30px"
+                        android:paddingLeft="30px"
+                        android:paddingRight="30px"
+                        android:paddingTop="90px" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_activity_words_blank_analysis_mainname__id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10px"
+                                android:text="Purse"
+                                android:textColor="#333333"
+                                android:textSize="36px"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/iv_activity_words_blank_analysis_mainnameplay__id"
+                                android:layout_width="36px"
+                                android:layout_height="36px"
+                                android:src="@drawable/adapter_words_read_s" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_activity_words_blank_analysis_mainnamechinese__id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30px"
+                            android:text="n.炉子 ，炊具"
+                            android:textColor="#333333"
+                            android:textSize="28px" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_words_blank_analysis_mainnameEnglishexample__id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5px"
+                            android:text="There is an electric cooker in the kitchen."
+                            android:textColor="#333333"
+                            android:textSize="28px" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_words_blank_analysis_mainnamechineseexample__id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="厨房里有个电灶。"
+                            android:textColor="#333333"
+                            android:textSize="28px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="126px"
+                        android:layout_height="60px"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15px"
+                        android:background="@drawable/adapter_words_title_bg"
+                        android:paddingLeft="20px"
+                        android:paddingTop="8px"
+                        android:text="解析"
+                        android:textColor="#ffffff"
+                        android:textSize="36px" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bv_activity_words_blank_Button_foot"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_margin="30px"
+                    android:background="@drawable/btn_cyan"
+                    android:text="下一题"
+                    android:textColor="#ffffff"
+                    android:textSize="36px"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/bv_activity_words_blank_Button_commit_foot"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_margin="30px"
+                    android:background="@drawable/btn_cyan"
+                    android:text="提交"
+                    android:textColor="#ffffff"
+                    android:textSize="36px"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

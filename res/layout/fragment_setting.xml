@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/bgimg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20px"
+            android:scrollbarStyle="outsideOverlay" >
+
+            <RelativeLayout
+                android:id="@+id/rl_settings_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings_item_bg"
+                android:paddingBottom="20px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:paddingTop="20px" >
+
+                <cn.ttsk.library.RoundedImageView
+                    android:id="@+id/iv_fragment_setting_head"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/adapter_words_charts_avatar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@id/iv_fragment_setting_head"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_settings_uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10px"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#333333"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_settings_snumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="201px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/settings_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:paddingLeft="40px"
+                    android:paddingRight="40px" >
+
+                    <TextView
+                        android:id="@+id/tv_settings_nowifi_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:text="允许非WIFI网络播放"
+                        android:textColor="@color/settings_tv_enabled"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        android:id="@+id/iv_settings_nowifi_play"
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/option_close" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dddddd" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:paddingLeft="40px"
+                    android:paddingRight="40px" >
+
+                    <TextView
+                        android:id="@+id/tv_settings_nowifi_dl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:text="允许非WIFI网络下载"
+                        android:textColor="@color/settings_tv_disabled"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        android:id="@+id/iv_settings_nowifi_dl"
+                        android:layout_width="120px"
+                        android:layout_height="40px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/option_close" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="201px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/settings_item_bg"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_settings_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:paddingLeft="40px"
+                    android:paddingRight="40px" >
+
+                    <TextView
+                        android:id="@+id/tv_settings_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:text="检查更新"
+                        android:textColor="#333333"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        android:layout_width="17px"
+                        android:layout_height="28px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/item_next" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dddddd" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_settings_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:paddingLeft="40px"
+                    android:paddingRight="40px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20px"
+                        android:text="关于"
+                        android:textColor="#333333"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        android:layout_width="17px"
+                        android:layout_height="28px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/item_next" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_settings_logout"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_margin="20px"
+                android:background="@drawable/btn_red"
+                android:text="退出登录 "
+                android:textColor="#ffffff"
+                android:textSize="36px"
+                />
+
+         
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

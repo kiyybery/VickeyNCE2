@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    
+    <!-- <com.way.itemexpandable.ActionSlideExpandableListView
+        android:id="@+id/asel_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.way.itemexpandable.ActionSlideExpandableListView> -->
+    <cn.ttsk.library.AnimatedExpandableListView
+        android:id="@+id/expandablelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:childIndicatorLeft="0dp"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:scrollbarAlwaysDrawHorizontalTrack="true" >
+    </cn.ttsk.library.AnimatedExpandableListView>
+</LinearLayout>

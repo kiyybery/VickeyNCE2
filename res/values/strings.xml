@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">木棉树英语</string>
+    <string name="common_waiting_please">载入中&#8230;</string>
+    <string name="tips_ion_exception">服务器返回异常，请重试</string>
+    <string name="tips_listen_save_mp3">音频文件已成功保存在/mnt/sdcard/music</string>
+    <string name="btn_login_later_text">稍后登录</string>
+    <string name="btn_login_sina_text">使用新浪微博登录</string>
+    <string name="btn_login_weixin_text">使用微信登录</string>
+    <string name="tips_ion_servererror">服务器返回错误数据，请重试</string>
+    <string name="title_about">关于</string>
+    <string name="tips_need_network">此操作需要联网</string>
+    <string name="tips_update_checking">检查版本中&#8230;</string>
+    <string name="url_about"></string>
+    <string name="tips_update_already_newest_version">您已经在使用最新版的应用\n感谢您的支持</string>
+    <string name="tips_update_not_wifi">请您在WIFI环境下使用此功能</string>
+    <string name="tips_update_network_timeout">网络连接超时，请确认您的手机能够正常访问网络后再重试</string>
+    <string name="dialog_message_default">请稍等&#8230;</string>
+    <string name="check_update">获取数据更新中</string>
+    <string name="title_main">木棉树英语</string>
+    <string name="title_buffer">缓存管理</string>
+    <string name="title_setting">设置</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_alert">警告</string>
+    <string name="title_confirm">确认</string>
+    <string name="tips_firstdownload_no_network">第一次使用，请在有网络连接的环境下下载课程数据</string>
+    <string name="firstdownload_no_network_button">去设置网络</string>
+    <string name="tips_firstdownload_no_wifi">第一次使用，请尽量在wifi环境下下载课程数据</string>
+    <string name="firstdownload_no_wifi_button_left">继续下载</string>
+    <string name="firstdownload_no_wifi_button_right">去设置网络</string>
+    <string name="tips_downloadword_no_network"></string>
+    <string name="downloadword_no_network_button">去设置网络</string>
+    <string name="tips_downloadword_no_wifi"></string>
+    <string name="downloadword_no_wifi_button_left">继续下载</string>
+    <string name="downloadword_no_wifi_button_right">去设置网络</string>
+   	<string name="need_login">请先登录</string>
+    <string name="login_fail">登录失败</string>
+
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">刷新</string>
+    <string name="processing">加载中</string>
+    <string name="download">下载</string>
+    <string name="download_fail">下载安装包失败</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="redo">重试</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+    
+    <string name="tab_download_title">此道不通，速去登录</string>
+    <string name="tab_download_cancel">否</string>
+    <string name="tab_download_login">是</string>
+    
+    <string name="video_download_title">下载需登录，速速前去</string>
+    <string name="video_download_cancel">否</string>
+    <string name="video_download_login">是</string>
+    
+    <string name="goword_title">此门不开，速去登录</string>
+    <string name="goword_login">是</string>
+    <string name="goword_cancel">否</string>
+    
+    <string name="gorecite_title">此门不开，速去登录</string>
+    <string name="gorecite_login">是</string>
+    <string name="gorecite_cancel">否</string>
+    
+    <string name="grade_title_a">学霸闪闪登场！小木已跪，膜拜中！</string>
+    <string name="grade_title_b">拼死完成，小木垂泪，你还可以更好！</string>
+    
+    <string name="share_title">分享标题</string>
+    <string name="share_content">岁月既积，卷帙自富。我正在使用#木棉树英语#，玩转单词，巧学语法。恋上英语，与卿相约，别问是劫是缘。我在这里，你在哪?</string>
+    <string name="share_url">http://wwwttsk.b0.upaiyun.com/VickeyNCE2.apk</string>
+    
+    <string name="text_oraltest_content">天赋本异禀，英语何苦叹。小生于#木棉树英语#倾情献声，不求崇拜，只求点赞</string>
+    <string name="record_btn">长按录音</string>
+    <string name="frequency">音频生成中</string>
+    <string name="commit_results">网络异常，无法提交，请检查网络!</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/umeng_fb_list_reply_header"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+         android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/umeng_fb_reply_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_chat_timebar"
+            android:text="@string/umeng_fb_reply_date_default"
+            android:textColor="#FFF"
+            android:textSize="10sp" />
+
+    <!--     <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/umeng_fb_reply_date"
+            android:background="#BBBBBB" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/umeng_fb_reply_date"
+            android:background="#BBBBBB" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umeng_fb_list_reply_header" >
+        <cn.ttsk.library.RoundedImageView
+            android:id="@+id/headImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="75dip"
+            android:maxWidth="75dip"
+            android:src="@drawable/avatar_vickey" />
+
+        <TextView
+            android:id="@+id/umeng_fb_reply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/feedback_dialogue_bg_you"
+            android:maxWidth="200dp"
+            android:textIsSelectable="true"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="50dp"
+            android:textColor="#ff000000"
+            android:textSize="15sp"/>
+    
+        
+    </RelativeLayout>
+
+</RelativeLayout>

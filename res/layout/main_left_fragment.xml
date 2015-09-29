@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_menu_bg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <cn.ttsk.library.RoundedImageView
+            android:id="@+id/iv_main_left_head"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sidebar_login" />
+
+        <TextView
+            android:id="@+id/tv_main_left_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10px"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/vickeyCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="12px"
+            android:textColor="#ffa8a8a3"
+            android:textSize="24px" />
+
+        <include
+            android:id="@+id/yixinBtnLayout"
+            layout="@layout/toolbox_item_vickey" />
+
+        <include
+            android:id="@+id/circleBtnLayout"
+            layout="@layout/toolbox_item_download" />
+
+        <include
+            android:id="@+id/settingBtnLayout"
+            layout="@layout/toolbox_item_setting" />
+
+        <!--
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.3299866dip"
+            android:background="#ff1c1c1b" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ff474745" />
+        -->
+
+        <include
+            android:id="@+id/feedbackBtnLayout"
+            layout="@layout/toolbox_item_feedback" />
+
+        <include
+            android:id="@+id/sharedBtnLayout"
+            layout="@layout/toolbox_item_shared" />
+
+        <TextView
+            android:id="@+id/inviteFriendBtnLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="140px"
+            android:background="@drawable/tools_box_invite_btn_selector"
+            android:gravity="center"
+            android:text="邀请好友"
+            android:textColor="#ff999994"
+            android:textSize="24px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>
